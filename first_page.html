@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url("bg2.jpg");
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+h1{
+  text-align:center;
+  color: white;
+  margin-top:-5%;
+  margin-left:1%;
+  font-size: 90px;
+  text-shadow: 5px 5px 6px red;
+  font-style:italic;
+  margin-
+
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.thumbnail:hover{
+  transform: scale(1.2);
+
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a id="myBtn">About</a>
+  <a id="myBtn2">Contact</a>
+  <a href="adminlogin.php">Admin Login</a>
+  <a href="login.html">User Login</a>
+  <a href="signup.html">Signup</a>
+</div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>It's a website that manages various club activities such as member registration, registration for various club activities and notify the members regarding club events.</p>
+  </div>
+
+</div>
+
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+    <h2>For any queries contact</h2>
+    <p><pre>
+G C Srivarsha
+srivarsha@gmail.com
+7890765456
+R S Priyanka
+priyanka123@gmail.com
+9870678768</pre> </p>
+  </div>
+
+</div>
+
+<div style="padding-left:16px">
+  <img src="club_logo.png" alt="img" class="image">
+  <h1 class="thumbnail"><font face='garamond'>TEAM UP - BIT CLUBS</font></h1>
+  <img class="thumbnail" style="width:25%; margin-left:5%;margin-bottom: 20%;border-radius:500px;" src="club_img2.jpg" alt="img" class="image">
+  <img class="thumbnail" style="width:25%; margin-left:50px;margin-bottom: 15%;border-radius:100px;" src="club_img.jpeg" alt="img" class="image">
+  <img class="thumbnail" style="width:25%;margin-left:50px;margin-bottom: 5%;border-radius:500px;" src="club_img3.jpg" alt="img" class="image">
+  <h2 class="thumbnail" style="color:white;text-align:center;"><font face='garamond'>ACTIVITIES WHICH MAKE COLLEGE MORE FUN !!!
+  </font></h2>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
